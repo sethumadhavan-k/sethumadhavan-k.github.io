@@ -18,7 +18,7 @@ footer{
 }
 
 .wish-font{
-    font-size: 13vw;
+    font-size: 4vw;
     font-family: 'Vesper Libre', serif;
 }
 
@@ -40,16 +40,78 @@ footer{
 }
 
 
+.pt-45 {
+    padding-top: 45px;
+}
 .pt-100 {
     padding-top: 100px;
 }
 .pt-120 {
     padding-top: 120px;
 }
-
-.pt-45 {
-    padding-top: 45px;
+.pt-150 {
+    padding-top: 150px;
 }
+
+
+
+#mobile_menu {
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0px;
+    width: 350px;
+    background-color: red;
+    right: -350px;
+    transition: right .5s;
+}
+.menu-header {
+    text-align: center;
+}
+
+.menu-close{
+    position: absolute;
+    top: 9px;
+    right: 21px;
+    cursor: pointer;
+}
+
+
+
+
+.menu-list  {
+    display: inline-block;
+    float: right;
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+}
+
+.menu-list  li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 6px 0px 6px;
+    cursor: pointer;
+}
+
+.menu-list li:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+  }
+  
+  .menu-list li:hover:after {
+    width: 100%;
+  }
+
+
+
 
 
 @media only screen and (max-width:600px){
@@ -60,4 +122,13 @@ footer{
     .pt-120 {
         padding-top: 100px;
     }
+
+    .menu-list {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: initial;
+    }
+
 }
