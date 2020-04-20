@@ -60,6 +60,7 @@ footer{
 #mobile_menu {
     cursor: pointer;
     float: right;
+    margin-top: 7px;
     display: none;
 }
 
